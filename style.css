@@ -18,6 +18,8 @@ body{
     text-decoration: none;
     font-size: 17px;
     transition: all 0.5s;
+    
+    overflow: hidden;
 }
 .topnav a:hover{
     background-color: #ddd;
@@ -25,7 +27,8 @@ body{
 }
 
 .topnav a.active{
-    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    
+   background-image: linear-gradient(to right, #00b09b, #96c93d); 
     color:white;
 }
 .topnav .icon{
@@ -40,6 +43,13 @@ body{
         float:right;
         display: block;
     }
+    .spar{
+    
+        height: 30%;
+        width: 90%;
+    }
+  
+   
 }
 @media screen and (max-width:600px) {
     .topnav.responsive{
@@ -56,4 +66,16 @@ body{
     text-align: left;
     }
    
+
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
