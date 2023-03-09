@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    color: white;
     font-family:'monospace' , monospace;
-   
-   
+    background-image: url("http://wallpapercave.com/wp/4Y6E4Gl.png");
+   text-align: center;
    
 }
 body{
@@ -25,8 +26,8 @@ body{
     overflow: hidden;
 }
 .topnav a:hover{
-    background-color: #ddd;
-    color:black;
+ 
+    color:rgb(241, 32, 105);
 }
 
 .topnav a.active{
@@ -120,45 +121,77 @@ a{
     color: white;
     padding-top: 100px;
     align-items: center;
-    background-image: url("https://img.freepik.com/free-photo/pink-3d-elegant-geometrical-texture_23-2149168867.jpg?w=1380&t=st=1677020043~exp=1677020643~hmac=53063b3be535d5af72d1f49d4ae2bf9ce43d74b7de9fd46c7383feac6e4d2bc3");
+    /* background-image: url("http://wallpapercave.com/wp/4Y6E4Gl.png"); */
     margin-bottom: 100px;
   }
   #home>div{
    margin: 20px;
-   /* padding: 100px; */
+
   }
 #about{
     height:auto;
     color: white;
-    background-color:#FD5DA8;
+    /* background-color:#d21d68; */
     width: 80%;
-    
     margin: auto;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     font-size: 40px;
     text-align: center;
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzwQ4Yl0MgDGxZ8UzvbuC56szpKDM39Vmr6sdJ9hWtQ8_of11KIOWs5bVfi5cI6zn6J_o&usqp=CAU"); */
 }
+#abo{
+   
+    margin-bottom: 100px;
+
+}
+
 #about:hover{
     
-   
-    box-shadow: pink 0px 6px 4px, pink 0px 0px 0px 3px;
+    color:rgb(241, 32, 105);
+}
+#c:hover{
+    color:rgb(241, 32, 105);
 }
 #ab{
     margin: 30px;
-   font-size: 25px;
-   font-family:'monospace' , monospace;
+    font-size: 25px;
+    font-family:'monospace' , monospace;
     padding-bottom: 50px;
+    
 }
  
   #projects{
-  
+
+    margin: 10%;
     display: grid;
     gap: 1rem;
+    color:white;
+    text-align: justify;
+    margin-bottom: 10%;
 }
-
-
+.project-card{
+    padding: 15px;
+    line-height: 5vh;
+}
+#tit:hover{
+    color:rgb(241, 32, 105); 
+}
 #skills { 
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
+    
+    width: 100%;
+    
+    text-align: center;
+    color:white;
+    margin-bottom: 10%;
+}
+#contact{
+    font-size: 30px;
+}
+#contact:hover{
+    font-size: 30px;
+    color:rgb(241, 32, 105);
+}
+#gitst{
+    background-color: black;
+    padding: 10%;
 }
