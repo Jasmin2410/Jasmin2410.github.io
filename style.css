@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
-    font-family:'monospace' , monospace;
+    color: #ddd;
+    font-family:Arial;
     background-image: url("http://wallpapercave.com/wp/4Y6E4Gl.png");
-   text-align: center;
+    text-align: center;
    
 }
 body{
@@ -84,10 +84,6 @@ body{
     display: block;
     text-align: left;
     }
-   
-    
-   
-
 }
 
 @media (min-width: 900px) {
@@ -115,13 +111,12 @@ a{
 }
 
   #home{
-    /* margin-top: 100px; */
+    
     height: auto;
     width: 100%;
     color: white;
     padding-top: 100px;
     align-items: center;
-    /* background-image: url("http://wallpapercave.com/wp/4Y6E4Gl.png"); */
     margin-bottom: 100px;
   }
   #home>div{
@@ -142,12 +137,24 @@ a{
     margin-bottom: 100px;
 
 }
-
+.home-img{
+    border-radius: 50%;
+}
 #about:hover{
     
     color:rgb(241, 32, 105);
 }
 #c:hover{
+    
+    color:rgb(241, 32, 105);
+}
+#user-detail-name:hover{
+    color:rgb(241, 32, 105);
+}
+#user-detail-intro:hover{
+    color:rgb(241, 32, 105);
+}
+#resume-button-2:hover{
     color:rgb(241, 32, 105);
 }
 #ab{
@@ -157,15 +164,16 @@ a{
     padding-bottom: 50px;
     
 }
+
  
   #projects{
 
-    margin: 10%;
+   
     display: grid;
     gap: 1rem;
     color:white;
     text-align: justify;
-    margin-bottom: 10%;
+   
 }
 .project-card{
     padding: 15px;
@@ -184,11 +192,8 @@ a{
     color:white;
     margin-bottom: 10%;
 }
-#contact{
-    font-size: 30px;
-}
+
 #contact:hover{
-    font-size: 30px;
     color:rgb(241, 32, 105);
 }
 #gitst{
