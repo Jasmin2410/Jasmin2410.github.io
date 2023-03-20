@@ -200,3 +200,9 @@ a{
     background-color: black;
     padding: 10%;
 }
+/* ----------------------------github------------------------- */
+
+.git-stat-div{
+    margin: auto;
+    width: 80%;
+}
