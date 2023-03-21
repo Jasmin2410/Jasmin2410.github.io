@@ -31,7 +31,10 @@ body{
 }
 #f{
     padding-top: 50px;
-    /* margin-bottom: -3px; */
+   
+}
+#resume-button-1{
+    padding-top: 50px;
 }
 .topnav a.active{
     
