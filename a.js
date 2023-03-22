@@ -18,5 +18,7 @@ function myFunction() {
   }
 }
 
-
+GitHubCalendar(".calendar", "Jasmin2410");
+// or enable responsive functionality
+GitHubCalendar(".calendar", "Jasmin2410", { responsive: true });
 
