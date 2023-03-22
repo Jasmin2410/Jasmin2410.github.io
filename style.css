@@ -33,9 +33,7 @@ body{
     padding-top: 50px;
    
 }
-#resume-button-1{
-    padding-top: 50px;
-}
+
 .topnav a.active{
     
    background-image: linear-gradient(to right, #00b09b, #96c93d); 
@@ -50,9 +48,10 @@ body{
     #projects{ grid-template-columns: repeat(2, 1fr); }
     #home{ display: flex; justify-content: space-between;font-size: 40px;color: yellow;}
     #ab{font-size: 30px;}
+    #c{ grid-template-columns: repeat(2, 1fr); }
   }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:600px) {
     .topnav a:not(:first-child){
         display: none;
     }
@@ -74,7 +73,7 @@ body{
      
   
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:600px) {
     .topnav.responsive{
         position: relative;
         
@@ -91,7 +90,6 @@ body{
     display: block;
     text-align: left;
     }
-    
 
     #contact-mail{
         flex-direction: column;
@@ -121,27 +119,18 @@ body{
     #contact-mail>form{
         margin: auto;
     }
-
-   
    #gitst>img{
     margin: auto;
     width: 100%;
     display: block;
    }
-
-   #leafp{
-    border-radius:  15px ; 
-}
-#leafpr{
-    border-radius : 15px; 
-}
 }
 
 @media (min-width: 900px) {
     #skills { grid-template-columns: repeat(4, 1fr); }
     #projects{grid-template-columns: repeat(2, 1fr);} 
     #home{ display: flex; justify-content: space-between;font-size: 40px;}
-   
+   #c{ grid-template-columns: repeat(3, 1fr); }
   }
   
 .sticky {
@@ -169,7 +158,7 @@ a{
     padding-top: 100px;
     align-items: center;
     margin:auto;
-   
+    margin-bottom: 100px;
   }
   #home>div{
    margin: 20px;
@@ -178,92 +167,80 @@ a{
   #logo{
     width: 80px;
     display: inline;
-    border-radius: 40px 1px 50px 1px;
     
   }
 #about{
     height:auto;
     color: white;
     background-color: rgb(241, 32, 105);
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
     font-size: 40px;
-    text-align: center;
+    
+    /* text-align: center; */
 }
 #abo{
+    width: 100%;
+    margin-bottom: 100px;
     background-color: rgb(241, 32, 105);
-    /* margin-bottom: 100px; */
 
 }
 .home-img{
-    border-radius: 260px 1px 260px 1px;
+    border-radius: 50%;
 }
-
+button{
+    background-color: rgb(241, 32, 105);
+    border: none;  
+}
 #ab{
     margin: 30px;
     font-size: 25px;
     font-family:'monospace' , monospace;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     
 }
 
  
   #projects{
 
-   
+    margin-bottom: 100px;
     display: grid;
-    gap: 6rem;
+    gap: 4rem;
     color:white;
     text-align: justify;
    
 }
 .project-card{
     background-color: rgb(241, 32, 105);
-    padding: 50px 0px 0px 50px;
+    padding: 15px;
     width: 80%;
     margin: auto;
-    /* border-radius: 40px 1px 50px 1px; */
-    line-height: 5vh;
-}
-#pimg{
-    border-radius:  1px 140px 1px 140px ;
-
-}
-#pimgr{
-    border-radius:   140px 1px 140px 1px  ;
+    border-radius: 15px;
+    line-height: 5vh;  
+    padding-top: 40px;
 }
 #tit:hover{
     color:#ddd; 
 }
-#skills { 
+#skills {
     display: grid;
     gap: 6rem;
     width: 80%;
     margin: auto;
     text-align: center;
     color:white;
-    /* margin-bottom: 5%; */
+    margin-bottom: 5%;
 }
 #skills>div{
+  
+
+    
     color: white;
     background-color: rgb(241, 32, 105);
     padding: 20px;
-    width: 100%;
-    
+    width: 80%;
+    border-radius: 15px;
     line-height: 5vh;
-}
-#leaf{
-    border-radius:  1px 140px 1px 140px ;
-   
-}
-#leafr{
-    border-radius: 140px 1px 140px 1px;
-}
-#leafp{
-    border-radius:  1px 240px 1px 240px ; 
-}
-#leafpr{
-    border-radius: 240px 1px 240px 1px; 
 }
 #contact:hover{
     color:rgb(241, 32, 105);
@@ -271,9 +248,7 @@ a{
 #gitst{
     background-color: rgb(241, 32, 105);
     padding: 5%;
-    width: 80%;
-    margin: auto;
-    border-radius: 340px 3px 340px 3px; 
+    margin-bottom: 100px;
 }
 /* ----------------------------github------------------------- */
 
@@ -288,7 +263,7 @@ a{
 /* contact section */
 #contact{
     width: 100%;
-    
+    margin-bottom: 100px;
 }
 #contact-mail{
     width: 80%;
@@ -344,9 +319,7 @@ a{
 }
 
 #contact-socials{
-    height: auto;
-    background-color: rgb(241, 32, 105);
-    display: flex;
+    height: auto;  
     align-items: center;
     color: #ddd;
     font-size: 16px;
@@ -373,12 +346,24 @@ text-decoration: none;
     margin-right: 20px;
 }
 #contact-git-container{
-    
+
     display: flex;
 }
-
 #contact-github{
     margin-right: 20px;
+}
+#c{
+    display: grid;
+    padding-top: 5%;
+    height: 400px;
+    background-color: rgb(241, 32, 105);
+   padding-bottom: 50px;
+}
+
+#git{
+    width: 100%;
+    /* margin-right: 20px; */
+    margin-bottom: 200px;
 }
 #top{
  overflow: hidden;
@@ -386,4 +371,18 @@ text-decoration: none;
   bottom: 0;
   width: 100%;
  background-color: black;
+ font-size: 40px;
 }
+#contact-socials{
+    margin: auto;
+}
+.home-img{
+    border-radius: 40px 1px 40px 1px;
+}
+#skills>div:hover{
+    box-shadow: rgba(241, 32, 105) 0px 22px 70px 4px;
+}
+.project-card:hover{  
+    box-shadow: rgba(241, 32, 105) 0px 22px 70px 4px;
+}
+
