@@ -25,3 +25,5 @@ GitHubCalendar(".calendar", "Jasmin2410", { responsive: true });
 function resume(){
   window.open("https://drive.google.com/file/d/1UPjs4mElLoNl869vxKXq_YCSisOWX8vk/view?usp=share_link", "_blank");
 }
+
+//...
