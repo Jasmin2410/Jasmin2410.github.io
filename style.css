@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
+    color:white;
     font-family:Arial;
     /* background-image: url("http://wallpapercave.com/wp/4Y6E4Gl.png"); */
     text-align: center;
@@ -11,7 +11,7 @@ body{
     background-color: #FFFFFF;
 }
 .topnav{
-    background-color: #333;
+    background-color: #12343b;
     overflow: hidden;
 }
 .topnav a{
@@ -27,7 +27,7 @@ body{
 }
 .topnav a:hover{
     background-color: #ddd;
-    color:rgb(241, 32, 105);
+    color:black;
 }
 #f{
     padding-top: 50px;
@@ -37,7 +37,7 @@ body{
 .topnav a.active{
     
    background-image: linear-gradient(to right, #00b09b, #96c93d); 
-    color:white;
+    color:black;
 }
 .topnav .icon{
     display: none;
@@ -46,9 +46,10 @@ body{
 @media (min-width: 600px) {
     #skills { grid-template-columns: repeat(2, 1fr); }
     #projects{ grid-template-columns: repeat(2, 1fr); }
-    #home{ display: flex; justify-content: space-between;font-size: 40px;color: yellow;}
+    #home{ display: flex; justify-content: space-between;font-size: 40px;}
     #ab{font-size: 30px;}
     #c{ grid-template-columns: repeat(2, 1fr); }
+  
   }
 
 @media screen and (max-width:600px) {
@@ -69,13 +70,15 @@ body{
         display: block;
         flex-direction: column;
       }
-      
+      #gitst{
+        /* display: block;
+        flex-direction: column; */
+      }
      
   
-}
-@media screen and (max-width:600px) {
+
     .topnav.responsive{
-        position: relative;
+        position: fixed;
         
        
     }
@@ -121,13 +124,13 @@ body{
     }
    #gitst>img{
     margin: auto;
-    width: 100%;
-    display: block;
+    width: 80%;
+    /* display: block; */
    }
 }
 
 @media (min-width: 900px) {
-    #skills { grid-template-columns: repeat(4, 1fr); }
+    #skills { grid-template-columns: repeat(3, 1fr); }
     #projects{grid-template-columns: repeat(2, 1fr);} 
     #home{ display: flex; justify-content: space-between;font-size: 40px;}
    #c{ grid-template-columns: repeat(3, 1fr); }
@@ -146,7 +149,7 @@ body{
 
 a{
     text-decoration: none;
-    color:white;
+  
     font-size: 30px;
 }
 
@@ -154,7 +157,7 @@ a{
     text-align: left;
     height: auto;
     width: 80%;
-    color: white;
+    
     padding-top: 100px;
     align-items: center;
     margin:auto;
@@ -171,47 +174,50 @@ a{
   }
 #about{
     height:auto;
-    color: white;
-    background-color: rgb(241, 32, 105);
-    /* width: 100%; */
+    margin-top: 100px;
+    background-color: #12343b;
     margin: auto;
     font-size: 40px;
-    
-    /* text-align: center; */
+    padding-top: 100px;
+    padding-bottom: 50px;
+   
 }
 #abo{
     width: 100%;
-    margin-bottom: 100px;
-    background-color: rgb(241, 32, 105);
+    padding-bottom: 100px;
+    background-color: #2d545e;
 
 }
 .home-img{
     border-radius: 50%;
 }
-button{
-    background-color: rgb(241, 32, 105);
-    border: none;  
+#resume-link-1{
+    background-color: #12343b;
+   
+}
+#resume-link-2{
+    background-color: #2d545e;
 }
 #ab{
     margin: 30px;
     font-size: 25px;
     font-family:'monospace' , monospace;
     padding-bottom: 100px;
-    
+ 
 }
 
  
   #projects{
-
-    margin-bottom: 100px;
+    background-color: #2d545e;
+    width: 100%;
+    padding-bottom: 100px;
     display: grid;
     gap: 4rem;
-    color:white;
     text-align: justify;
    
 }
 .project-card{
-    background-color: rgb(241, 32, 105);
+    border:1px solid teal;
     padding: 15px;
     width: 80%;
     margin: auto;
@@ -220,7 +226,7 @@ button{
     padding-top: 40px;
 }
 #tit:hover{
-    color:#ddd; 
+    color:#2d545e; 
 }
 #skills {
     display: grid;
@@ -228,32 +234,42 @@ button{
     width: 80%;
     margin: auto;
     text-align: center;
-    color:white;
-    margin-bottom: 5%;
+    
+    padding-bottom: 5%;
+   
+}
+#s1{
+    background-color: #2d545e;
+    width: 100%;
 }
 #skills>div{
-  
-
-    
-    color: white;
-    background-color: rgb(241, 32, 105);
+    margin: auto;
+    border:1px solid teal;
     padding: 20px;
     width: 80%;
+    margin-top: 30px;
     border-radius: 15px;
     line-height: 5vh;
 }
-#contact:hover{
-    color:rgb(241, 32, 105);
-}
+
 #gitst{
-    background-color: rgb(241, 32, 105);
+    /* display: grid; */
+    gap: 4rem;
+    width: 80%;
     padding: 5%;
-    margin-bottom: 100px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+#gitsts{
+   
+    padding: 5%;
+    border:1px solid teal;
 }
 /* ----------------------------github------------------------- */
 
 .git-stat-div{
     margin: auto;
+    background-color: #c89666;
     width: 80%;
    
 }
@@ -263,7 +279,8 @@ button{
 /* contact section */
 #contact{
     width: 100%;
-    margin-bottom: 100px;
+    background-color: #2d545e;
+    padding-bottom: 100px;
 }
 #contact-mail{
     width: 80%;
@@ -280,7 +297,7 @@ button{
     mix-blend-mode: multiply;
 }
 #heading{
-    color: rgb(241, 32, 105);
+   
     text-align: center;
     font-size: 40px;
     padding: 30px 0 20px 0;
@@ -296,10 +313,10 @@ button{
     border: none;
     margin-bottom: 43px;
     padding: 12px 19px;
-    box-shadow: rgba(249, 25, 170, 0.928) 0px 2px 8px 0px;
+    /* box-shadow: rgba(167, 130, 22, 0.928) 0px 2px 8px 0px; */
 }
 #contact-mail>form>#form-message{
-    box-shadow: rgba(249, 25, 170, 0.928) 0px 2px 8px 0px;
+    
     width: 100%;
     border-radius: 4px;
     border: none;
@@ -312,7 +329,7 @@ button{
     margin-left: auto;
     margin-right: auto;
     color: #ddd;
-    background-color: rgb(241, 32, 105);
+    background-color: #12343b;
     padding:12px, 24px, 12px, 24px;
     width: max-content;
     cursor: pointer;
@@ -321,11 +338,11 @@ button{
 #contact-socials{
     height: auto;  
     align-items: center;
-    color: #ddd;
+   
     font-size: 16px;
 }
 #contact-socials a{
-color: white;
+
 text-decoration: none;
 }
 #contact-socials-container{
@@ -356,21 +373,32 @@ text-decoration: none;
     display: grid;
     padding-top: 5%;
     height: 400px;
-    background-color: rgb(241, 32, 105);
+    
+    background-color: #12343b;
    padding-bottom: 50px;
+}
+#c>div{
+    margin: auto;
+    width: 80%;
+    padding: 2%;
+    border:1px solid teal;
+}
+#c>div:hover{
+    background-color: #2d545e;
+    box-shadow: rgba(42, 62, 110, 0.928) 0px 22px 70px 4px;
 }
 
 #git{
     width: 100%;
-    /* margin-right: 20px; */
     margin-bottom: 200px;
+    
 }
 #top{
  overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
- background-color: black;
+ background-color:  #12343b ;
  font-size: 40px;
 }
 #contact-socials{
@@ -380,9 +408,20 @@ text-decoration: none;
     border-radius: 40px 1px 40px 1px;
 }
 #skills>div:hover{
-    box-shadow: rgba(241, 32, 105) 0px 22px 70px 4px;
+    background-color: #12343b;
+    box-shadow: rgba(19, 26, 42, 0.928) 0px 22px 20px 4px;
 }
 .project-card:hover{  
-    box-shadow: rgba(241, 32, 105) 0px 22px 70px 4px;
+    background-color: #12343b;
+    box-shadow: rgba(19, 26, 42, 0.928) 0px 22px 70px 4px;
+}
+#social{
+    padding: 30px;
+    background-color: #2d545e;
+}
+#git-stats{
+    width: 100%;
+    background-color: #2d545e;
+      padding-bottom: 100px;
 }
 
